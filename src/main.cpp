@@ -3,7 +3,7 @@
 Color blue = {52, 152, 219,255};
 
 int main(){
-    InitWindow(400,900,"tetris");
+    InitWindow(300,600,"tetris");
     SetTargetFPS(120);
     Grid grid;
     grid.initialize();
@@ -11,6 +11,7 @@ int main(){
      while(WindowShouldClose() == false){
         BeginDrawing();
         ClearBackground(blue);
+        grid.draw();
 
         EndDrawing();
 
