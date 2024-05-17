@@ -1,17 +1,16 @@
 #include <raylib.h>
-#include "grid.h"
-Color blue = {52, 152, 219,255};
+#include "game.h"
 
 int main(){
     InitWindow(300,600,"tetris");
     SetTargetFPS(120);
-    Grid grid;
-    grid.initialize();
-    grid.print();
+
+    Game game = Game();
      while(WindowShouldClose() == false){
         BeginDrawing();
-        ClearBackground(blue);
-        grid.draw();
+        ClearBackground(DARKBLUE);
+        game.Draw();
+
 
         EndDrawing();
 

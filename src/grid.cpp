@@ -31,6 +31,9 @@ void Grid::print(){
 
 
 void Grid::draw(){
+    // Initialize the grid array before accessing its elements
+    initialize();
+    
     for(int row = 0 ; row < nrows; row++){
         for(int col = 0 ; col<ncols ; col++){
                 int cellvalue = grid[row][col];
