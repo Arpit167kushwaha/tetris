@@ -10,6 +10,7 @@ class Grid{
     void initialize();
     void print();
     void draw();
+    bool IsCelloutside(int row, int col);
 
     private:
     int nrows;

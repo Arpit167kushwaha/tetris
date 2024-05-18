@@ -9,8 +9,11 @@ class Block{
     Block();
     void Draw();
     void Move(int dr, int dc);
+    void UndoRotation();
     int id;
     std::map<int, std::vector<Position>> cells;
+    
+    void Rotate();
     std::vector<Position> GetPosition();
     private:
     int cellsize;

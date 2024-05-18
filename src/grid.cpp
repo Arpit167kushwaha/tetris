@@ -42,3 +42,13 @@ void Grid::draw(){
         }
     }
 }
+
+
+bool Grid::IsCelloutside(int row, int col){
+
+    if( row>=0 && row<nrows && col>=0 && col<ncols)
+    {
+        return false;
+    }
+    return true;
+}
